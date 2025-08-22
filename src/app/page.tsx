@@ -19,7 +19,7 @@ export default function Home() {
                     </p>
                 </span>
                 <p className="border w-1/3 text-center">
-                    image goes here probably
+                    image goes here probably (i don&apost have an image)
                 </p>
             </div>
         </div>

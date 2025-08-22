@@ -6,8 +6,8 @@ import { FileText, CodeXml, Mail, Folder, House } from "lucide-react";
 import { useState } from "react";
 import { nunito } from "@/lib/fonts";
 
-const buttonInactive = `rounded p-2 group hover:bg-pink-200`
-const iconInactive = `group-hover:text-black`
+const buttonInactive = `rounded p-2 group hover:bg-pink-200 transition`
+const iconInactive = `group-hover:text-black transition`
 const buttonActive = `rounded p-2 bg-pink-300`
 const iconActive = `text-black`
 
