@@ -41,38 +41,39 @@ export default function ProjectsPage() {
             <hr className="w-2/3 mx-auto my-2" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center mt-4 w-2/3">
                 {strings.projects.map(item => {
-                    const isActive = highlightedProject === item.id
+                    const isActive = highlightedProject === item.id 
                     return (
-                        <div key={item.name} className={isActive ? projectActive : projectInactive} onClick={() => handleClick(item.id)}>
-                            {/* Card Header */}
-                            <div className="flex w-full justify-center">
-                                <div className="flex-1 flex w-1/3">
-                                </div>
-                                <div className="flex-1 flex w-1/3 justify-center gap-4 pt-2">
-                                    <h3 className={isActive ? titleTextActive : titleTextInactive}>{item.name}</h3>
-                                </div>
-                                <div className="flex-1 flex w-1/3 justify-end p-2">
-                                    {item.github ?
-                                        <a href={item.github} target="_blank">
+                        <a href={item.github} key={item.name} target="_blank">
+                            <div className={isActive ? projectActive : projectInactive} onClick={() => handleClick(item.id)}>
+                                {/* Card Header */}
+                                <div className="flex w-full justify-center">
+                                    <div className="flex-1 flex w-1/3">
+                                    </div>
+                                    <div className="flex-1 flex w-1/3 justify-center gap-4 pt-2">
+                                        <h3 className={isActive ? titleTextActive : titleTextInactive}>{item.name}</h3>
+                                    </div>
+                                    <div className="flex-1 flex w-1/3 justify-end p-2">
+                                        {item.github ?
                                             <SiGithub className={isActive ? "filter invert" : "group-hover:invert transition"} />
-                                        </a> : null}
+                                            : null}
+                                    </div>
                                 </div>
-                            </div>
 
-                            {/* Card Body */}
-                            <p className={isActive ? descTextActive : descTextInactive}>{item.description}</p>
-                            {item.skills.map(skill => {
-                                const title = skill[0]
-                                const desc = skill[1]
-                                return (
-                                    <p key={title} className={isActive ? skillsTextActive : skillsTextInactive}><b>{title}</b>: {desc}</p>
-                                )
-                            })}
-                        </div>
+                                {/* Card Body */}
+                                <p className={isActive ? descTextActive : descTextInactive}>{item.description}</p>
+                                {item.skills.map(skill => {
+                                    const title = skill[0]
+                                    const desc = skill[1]
+                                    return (
+                                        <p key={title} className={isActive ? skillsTextActive : skillsTextInactive}><b>{title}</b>: {desc}</p>
+                                    )
+                                })}
+                            </div>
+                        </a>
                     )
                 })}
             </div>
 
-        </div>
+        </div >
     );
 }
