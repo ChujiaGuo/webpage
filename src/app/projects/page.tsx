@@ -4,12 +4,12 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import { nunito } from "@/lib/fonts";
 import * as strings from "@/lib/strings"
 
-const projectInactive = `border border-gray-300/80 rounded-xl p-2 group hover:bg-[#d6a3c9] hover:border-[#d6a3c9] transition h-full`
+const projectInactive = `group border transition border-gray-300/70 rounded-xl h-full p-2 hover:bg-[#d6a3c9]/90 hover:border-[#d6a3c9] backdrop-blur-sm`
 const titleTextInactive = `text-xl font-semibold mb-2 text-center group-hover:text-black transition`
 const descTextInactive = `pb-2 px-4 group-hover:text-gray-900 transition`
 const skillsTextInactive = `pb-2 px-4 text-md group-hover:text-gray-900 transition`
 
-const projectActive = `border rounded-xl p-2 bg-pink-300 border-pink-300`
+const projectActive = `border rounded-xl p-2 bg-pink-300 border-pink-300 h-full`
 const titleTextActive = `text-xl font-semibold mb-2 text-center text-black`
 const descTextActive = `text-gray-900 pb-2 px-4`
 const skillsTextActive = `text-gray-900 pb-2 px-4`
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
 
     return (
         <div className="flex flex-col md:flex-col mx-auto w-full h-full items-center" onClick={() => handleClick("")}>
-            <h1 className={`${nunito.className} text-2xl text-center`}>
+            <h1 className={`${nunito.className} text-2xl text-center w-full backdrop-blur-sm`}>
                 Projects
             </h1>
             <hr className="w-2/3 mx-auto my-2" />

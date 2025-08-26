@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FileText, Mail, Folder, House, User } from "lucide-react";
+import { FileText, Mail, Folder, House, User, CodeXml } from "lucide-react";
 import { useState } from "react";
 import { nunito } from "@/lib/fonts";
 
@@ -28,7 +28,7 @@ export default function Navbar() {
 
     return (
         <div className="h-10[vh]" >
-            <nav className="sticky top-0 z-50 backdrop-blur-md">
+            <nav className="sticky top-0 z-50 bg-[#070709]">
                 <div className="max-w-7xl mx-auto flex items-center justify-between px-4 pt-3">
                     <div className="flex-1 flex">
                         <Link href='/' className={isActive('/') ? buttonActive : buttonInactive}>
@@ -62,16 +62,16 @@ export default function Navbar() {
                         ))}
                     </div>
                 </div>
-            </nav>
-            <div className="max-w-7xl h-8 mx-auto">
-                <div className={`flex flex-1 justify-center ${nunito.className} text-lg text-gray-300/80`}>
-                    {hovered && center_links.find(l => l.href === hovered)?.label}
-                </div>
+                <div className="max-w-7xl h-8 mx-auto">
+                    <div className={`flex flex-1 justify-center ${nunito.className} text-lg text-gray-300/80`}>
+                        {hovered && center_links.find(l => l.href === hovered)?.label}
+                    </div>
 
-                <div className={`flex flex-1 justify-end px-2 ${nunito.className} text-lg text-gray-300/80`}>
-                    {hovered && right_links.find(l => l.href === hovered)?.label}
+                    <div className={`flex flex-1 justify-end px-2 ${nunito.className} text-lg text-gray-300/80`}>
+                        {hovered && right_links.find(l => l.href === hovered)?.label}
+                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
     );
 }

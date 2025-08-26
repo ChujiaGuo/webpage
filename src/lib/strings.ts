@@ -14,6 +14,13 @@ export const resume_coursework = [
     { grade: "In Progress", course: "Artificial Intelligence" },
 ]
 
+export const skills = {
+    "languages": ["C", "C++", "Java", "Python", "JavaScript", "TypeScript", "Go"],
+    "frameworks": ["Next.js", "React.js", "Node.js", "Electron", "Pandas", "NumPy"],
+    "tools": ["AWS", "Azure", "Git", "Github", "Docker"],
+    "databases":["SQL Server", "MySQL", "SQLite", "S3"],
+}
+
 export const resume_experience = [
     {
         company: "Guangzhou Quantitative Software Technology Co.", alt: "广州量化软件技术有限公司", position: "Full-Stack Intern", location: "Guangzhou, China", date: "June 2025 - August 2025", description: "Developed and optimized full-stack solutions using Next.js and Go to support portfolio managers with real-time management of over 500 stocks, while significantly improving system performance and user experience.", project: "", notes:
@@ -36,7 +43,26 @@ export const resume_experience = [
                 ]
             ]
     },
-    { company: "BlueBot", alt: "", position: "Founder", location: "Silver Spring, MD", date: "May 2020 - September 2023", description: "Planned and developed a highly scalable platform using Node.js, Python, and Java, able to support up to 100,000 daily active users while maintaining high uptime and reliability.", project: "bluebot" },
+    {
+        company: "BlueBot", alt: "", position: "Founder", location: "Silver Spring, MD", date: "May 2020 - September 2023", description: "Planned and developed a highly scalable platform using Node.js, Python, and Java, able to support up to 100,000 daily active users while maintaining high uptime and reliability.", project: "bluebot", notes: [
+            [
+                "Team Leadership and Management",
+                "Led and worked with a team of 10 developers to build and optimize our system with Git, Docker, and Slack for streamlined communication and development."
+            ],
+            [
+                "Task Optimization and Automation",
+                "Automated 75+ tasks across AWS, with reduced response and operating times by 30%."
+            ],
+            [
+                "Artificial Intelligence Integration",
+                "Integrated custom trained AI models designed to recognize broad behavioral patterns in consenting users."
+            ],
+            [
+                "Real-Time Functionality",
+                "Developed REST APIs, and integrated OAuth2 to provide users with real-time services, maintain secure authentication, while maintaining an uptime of over 99.9%."
+            ]
+        ]
+    },
 ]
 
 export const projects = [
