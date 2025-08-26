@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
-import { SiGithub } from "@icons-pack/react-simple-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { nunito } from "@/lib/fonts";
 import * as strings from "@/lib/strings"
 
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
                                     </div>
                                     <div className="flex-1 flex w-1/3 justify-end p-2">
                                         {item.github ?
-                                            <SiGithub className={isActive ? "filter invert" : "group-hover:text-black transition"}/>
+                                            <FontAwesomeIcon icon={faGithub} className={isActive ? "filter invert" : "group-hover:text-black transition"} style={{ width: '28px', height: '28px' }} />
                                             : null}
                                     </div>
                                 </div>
@@ -65,7 +66,7 @@ export default function ProjectsPage() {
                                     const title = skill[0]
                                     const desc = skill[1]
                                     return (
-                                        <p key={title} className={isActive ? skillsTextActive : skillsTextInactive}><b className={`${isActive?"text-gray-900":"text-[#d6a3c9] transition"} group-hover:text-gray-900`}>{title}</b>: {desc}</p>
+                                        <p key={title} className={isActive ? skillsTextActive : skillsTextInactive}><b className={`${isActive ? "text-gray-900" : "text-[#d6a3c9] transition"} group-hover:text-gray-900`}>{title}</b>: {desc}</p>
                                     )
                                 })}
                             </div>

@@ -61,7 +61,7 @@ function SkillsEducation() {
                     {Object.entries(strings.skills).map(([key, list]) => {
                         return (
                             <div key={key} className={`${nunito.className}  text-center`}>
-                                <p className="text-lg text-gray-300/80"><b>{key.charAt(0).toUpperCase() + key.slice(1)}:</b></p>
+                                <p className="text-lg text-[#d6a3c9]"><b>{key.charAt(0).toUpperCase() + key.slice(1)}:</b></p>
                                 <p className="text-md text-gray-300/80">{list.join(", ")}</p>
                             </div>)
                     })}

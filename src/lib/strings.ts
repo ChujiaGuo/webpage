@@ -81,7 +81,7 @@ export const projects = [
     },
     {
         id: "webpage", name: "This website!",
-        description: "Use this website to get to know me!",
+        description: "Use this website to get to know me! Works on mobile!",
         github: "https://github.com/ChujiaGuo/webpage",
         skills:
             [["Next.js", "The framework used to build this site. Absolute overkill, but fun to use"],
