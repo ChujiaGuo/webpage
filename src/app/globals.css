@@ -2,7 +2,7 @@
 
 :root {
   --background: #070709;
-  --foreground: #ffffff;
+  --foreground: rgba(209, 213, 219, 0.8);
 }
 
 body {

@@ -4,10 +4,10 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import { nunito } from "@/lib/fonts";
 import * as strings from "@/lib/strings"
 
-const projectInactive = `border rounded-xl p-2 group hover:bg-pink-200 hover:border-pink-200 transition`
-const titleTextInactive = `text-xl font-semibold mb-2 text-center text-gray-200 group-hover:text-black transition`
-const descTextInactive = `text-gray-300 pb-2 px-4 group-hover:text-gray-900 transition`
-const skillsTextInactive = `text-gray-300 pb-2 px-4 text-md group-hover:text-gray-900 transition`
+const projectInactive = `border border-gray-300/80 rounded-xl p-2 group hover:bg-[#d6a3c9] hover:border-[#d6a3c9] transition h-full`
+const titleTextInactive = `text-xl font-semibold mb-2 text-center group-hover:text-black transition`
+const descTextInactive = `pb-2 px-4 group-hover:text-gray-900 transition`
+const skillsTextInactive = `pb-2 px-4 text-md group-hover:text-gray-900 transition`
 
 const projectActive = `border rounded-xl p-2 bg-pink-300 border-pink-300`
 const titleTextActive = `text-xl font-semibold mb-2 text-center text-black`
@@ -35,16 +35,16 @@ export default function ProjectsPage() {
 
     return (
         <div className="flex flex-col md:flex-col mx-auto w-full h-full items-center" onClick={() => handleClick("")}>
-            <h1 className={`${nunito.className} text-2xl text-gray-200 text-center`}>
+            <h1 className={`${nunito.className} text-2xl text-center`}>
                 Projects
             </h1>
             <hr className="w-2/3 mx-auto my-2" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center mt-4 w-2/3">
                 {strings.projects.map(item => {
-                    const isActive = highlightedProject === item.id 
+                    const isActive = highlightedProject === item.id
                     return (
                         <a href={item.github} key={item.name} target="_blank">
-                            <div className={isActive ? projectActive : projectInactive} onClick={() => handleClick(item.id)}>
+                            <div className={isActive ? projectActive : projectInactive}>
                                 {/* Card Header */}
                                 <div className="flex w-full justify-center">
                                     <div className="flex-1 flex w-1/3">
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
                                     </div>
                                     <div className="flex-1 flex w-1/3 justify-end p-2">
                                         {item.github ?
-                                            <SiGithub className={isActive ? "filter invert" : "group-hover:invert transition"} />
+                                            <SiGithub className={isActive ? "filter invert" : "group-hover:text-black transition"}/>
                                             : null}
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@ export default function ProjectsPage() {
                                     const title = skill[0]
                                     const desc = skill[1]
                                     return (
-                                        <p key={title} className={isActive ? skillsTextActive : skillsTextInactive}><b>{title}</b>: {desc}</p>
+                                        <p key={title} className={isActive ? skillsTextActive : skillsTextInactive}><b className={`${isActive?"text-gray-900":"text-[#d6a3c9] transition"} group-hover:text-gray-900`}>{title}</b>: {desc}</p>
                                     )
                                 })}
                             </div>
@@ -73,7 +73,6 @@ export default function ProjectsPage() {
                     )
                 })}
             </div>
-
         </div >
     );
 }

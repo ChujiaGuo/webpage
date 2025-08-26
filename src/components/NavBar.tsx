@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FileText, CodeXml, Mail, Folder, House } from "lucide-react";
+import { FileText, Mail, Folder, House, User } from "lucide-react";
 import { useState } from "react";
 import { nunito } from "@/lib/fonts";
 
@@ -13,8 +13,8 @@ const iconActive = `text-black`
 
 const center_links = [
     { href: '/resume', label: 'resume', icon: FileText },
-    { href: '/skills', label: 'skills', icon: CodeXml },
     { href: '/projects', label: 'projects', icon: Folder },
+    { href: '/about', label: 'about', icon: User },
 ];
 
 const right_links = [
@@ -64,11 +64,11 @@ export default function Navbar() {
                 </div>
             </nav>
             <div className="max-w-7xl h-8 mx-auto">
-                <div className={`flex flex-1 justify-center ${nunito.className} text-lg text-gray-400`}>
+                <div className={`flex flex-1 justify-center ${nunito.className} text-lg text-gray-300/80`}>
                     {hovered && center_links.find(l => l.href === hovered)?.label}
                 </div>
 
-                <div className={`flex flex-1 justify-end px-2 ${nunito.className} text-lg text-gray-400`}>
+                <div className={`flex flex-1 justify-end px-2 ${nunito.className} text-lg text-gray-300/80`}>
                     {hovered && right_links.find(l => l.href === hovered)?.label}
                 </div>
             </div>
