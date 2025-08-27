@@ -1,8 +1,10 @@
 import * as strings from "../lib/strings";
 import { nunito } from "@/lib/fonts";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
+    const unoptimized = process.env.NODE_ENV !== 'production';
     return (
         <div className="flex flex-col w-full h-full items-center justify-center bg-[#070709]/50 backdrop-blur-xs">
             <div className="flex flex-col md:flex-row md:items-left items-center justify-center w-3/4 gap-4">
@@ -19,7 +21,7 @@ export default function Home() {
                     </p>
                 </span>
                 <p className="w-1/4 text-center order-1 md:order-2">
-                    <img src="https://placehold.co/400x300" alt="A picture of me" />
+                    <Image src="https://placehold.co/400x300" alt="A picture of me" width={400} height={300} unoptimized={unoptimized} />
                 </p>
             </div>
         </div>

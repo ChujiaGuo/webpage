@@ -19,6 +19,7 @@ const skillsTextActive = `text-gray-900 pb-2 px-4`
 export default function ProjectsPage() {
     const [highlightedProject, setHighlightedProject] = useState<string | null>(null);
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleClick = (id: string) => {
         setHighlightedProject(null)
         if (window.location.hash)

@@ -97,5 +97,5 @@ export const projects = [
     }
 ]
 
-const experience_placeholder = { company: "", alt: "", position: "", location: "", date: "", description: "", project: "", notes: [] }
-const project_placeholder = { id: "", name: "", description: "", github: "", skills: [["", ""]] }
+// experience_placeholder = { company: "", alt: "", position: "", location: "", date: "", description: "", project: "", notes: [] }
+// project_placeholder = { id: "", name: "", description: "", github: "", skills: [["", ""]] }

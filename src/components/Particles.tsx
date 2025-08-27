@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
-    type Container,
     type ISourceOptions,
     MoveDirection,
     OutMode,
@@ -67,6 +66,7 @@ const particlesConfig = {
 }
 
 export default function ParticleBackground() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_, setInit] = useState(false);
 
     useEffect(() => {
@@ -77,7 +77,7 @@ export default function ParticleBackground() {
         });
     }, []);
 
-    const particlesLoaded = async (container?: Container): Promise<void> => {
+    const particlesLoaded = async (): Promise<void> => {
     };
 
     const options: ISourceOptions = useMemo(
