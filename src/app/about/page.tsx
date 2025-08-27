@@ -2,7 +2,6 @@ import { nunito } from "@/lib/fonts";
 import Image from "next/image";
 
 export default function AboutPage() {
-  const unoptimized = process.env.NODE_ENV !== 'production';
   return (
     <div className="flex flex-col md:flex-col mx-auto w-full h-full items-center">
       <h1 className={`${nunito.className} text-2xl text-center w-full backdrop-blur-sm`}>
@@ -15,7 +14,7 @@ export default function AboutPage() {
           In particular, I love tackling challenging problems and devising creative, practical solutions that make an impact. Outside of my studies, I enjoy playing badminton, reading, and playing any manner competitive games — but I&apos;m also amenable to just relaxing.
           <br /><br />
         </div>
-        <Image src="/about.png" alt="A picture of me" width={400} height={300} unoptimized={unoptimized} />
+        <Image src="/about.png" alt="A picture of me" width={400} height={300} unoptimized={true} />
       </div>
     </div >
   );
