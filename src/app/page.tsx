@@ -21,7 +21,7 @@ export default function Home() {
                     </p>
                 </span>
                 <p className="w-1/4 text-center order-1 md:order-2">
-                    <Image src="https://placehold.co/400x300" alt="A picture of me" width={400} height={300} unoptimized={unoptimized} />
+                    <Image src="/home.png" alt="A picture of me" width={400} height={300} unoptimized={unoptimized} />
                 </p>
             </div>
         </div>

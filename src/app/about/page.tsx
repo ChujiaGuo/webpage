@@ -15,7 +15,7 @@ export default function AboutPage() {
           In particular, I love tackling challenging problems and devising creative, practical solutions that make an impact. Outside of my studies, I enjoy playing badminton, reading, and playing any manner competitive games — but I&apos;m also amenable to just relaxing.
           <br /><br />
         </div>
-        <Image src="https://placehold.co/400x300" alt="A picture of me" width={400} height={300} unoptimized={unoptimized} />
+        <Image src="/about.png" alt="A picture of me" width={400} height={300} unoptimized={unoptimized} />
       </div>
     </div >
   );
