@@ -27,8 +27,8 @@ export default function Navbar() {
     const [hovered, setHovered] = useState<string | null>(null);
 
     return (
-        <div className="h-10[vh]" >
-            <nav className="sticky top-0 z-50 bg-[#070709]">
+        <div className="sticky top-0 z-50 h-10[vh] backdrop-blur-xs" >
+            <nav className="bg-[#070709]/80">
                 <div className="max-w-7xl mx-auto flex items-center justify-between px-4 pt-3">
                     <div className="flex-1 flex">
                         <Link href='/' className={isActive('/') ? buttonActive : buttonInactive}>

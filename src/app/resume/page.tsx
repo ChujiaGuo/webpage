@@ -18,7 +18,7 @@ function Experience() {
             </h1>
             <hr className="w-full mx-auto my-2 border-gray-300/80" />
             {strings.resume_experience.map((item) => (
-                <div key={item.position + item.company} className="flex flex-col mt-2 w-2/3">
+                <div key={item.position + item.company} className="flex flex-col mt-2 w-full md:w-2/3">
                     <p className={`${nunito.className} text-lg text-gray-300/80 text-center`} >
                         <b>{item.company}</b>
                     </p>

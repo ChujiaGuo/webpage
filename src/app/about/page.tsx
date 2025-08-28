@@ -8,9 +8,9 @@ export default function AboutPage() {
         About Me
       </h1>
       <hr className="w-2/3 mx-auto my-2" />
-      <div className={`rounded flex flex-col md:flex-row mt-4 p-2 ${nunito.className} text-lg gap-4 w-1/2 justify-between backdrop-blur-sm items-center`}>
+      <div className={`rounded flex flex-col md:flex-row mt-4 p-2 ${nunito.className} text-lg gap-4 w-2/3 md:w-1/2 justify-between backdrop-blur-sm items-center`}>
         <div className="">
-          Hello, I&apos;m Chujia Guo — a computer science student with a passion for computer science and engineering. I enjoy working with others and exploring unique and innovative solutions to a variety of problems.
+          Hello, I&apos;m a computer science student with a passion for computer science and engineering. I enjoy working with others and exploring unique and innovative solutions to a variety of problems.
           In particular, I love tackling challenging problems and devising creative, practical solutions that make an impact. Outside of my studies, I enjoy playing badminton, reading, and playing any manner competitive games — but I&apos;m also amenable to just relaxing.
           <br /><br />
         </div>
