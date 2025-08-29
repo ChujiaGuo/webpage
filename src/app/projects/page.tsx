@@ -36,7 +36,7 @@ export default function ProjectsPage() {
     }, []);
 
     return (
-        <div className="flex flex-col md:flex-col mx-auto w-full h-full items-center" onClick={() => handleClick("")}>
+        <div className="flex flex-col md:flex-col mx-auto w-full items-center pb-20" onClick={() => handleClick("")}>
             <h1 className={`${nunito.className} text-2xl text-center w-full backdrop-blur-sm`}>
                 Projects
             </h1>

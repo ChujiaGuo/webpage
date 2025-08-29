@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ResumePage() {
     return (
-        <div className="flex flex-col md:flex-col w-full h-full items-center">
+        <div className="flex flex-col md:flex-col w-full items-center pb-20">
             {SkillsEducation()}
             {Experience()}
         </div>

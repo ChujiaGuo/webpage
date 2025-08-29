@@ -38,7 +38,7 @@ export default function RootLayout({
                     <ParticleBackground />
                 </div>
                 {children}
-            </body>
+            </body> 
         </html>
     );
 }
