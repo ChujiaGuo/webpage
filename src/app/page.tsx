@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className="flex flex-col w-full items-center justify-center bg-[#070709]/50 backdrop-blur-xs h-full">
             <div className="flex flex-col md:flex-row md:items-left items-center justify-center w-3/4 gap-4">
-                <span className="w-1/2 order-2 md:order-1">
+                <span className="w-2/3 md:w-1/2 order-2 md:order-1">
                     <h1 className={`${nunito.className} text-3xl text-gray-300 text-center md:text-left`}>
                         {strings.landing_header}
                     </h1>
