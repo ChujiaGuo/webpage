@@ -11,10 +11,10 @@ export default function AboutPage() {
       <div className={`rounded flex flex-col md:flex-row mt-4 p-2 ${nunito.className} text-lg gap-4 w-2/3 md:w-1/2 justify-between backdrop-blur-sm items-center`}>
         <div>
           Hello, I&apos;m a computer science student with a passion for software and engineering. I enjoy working with others and exploring unique and innovative solutions to a variety of problems.
-          In particular, I love tackling challenging problems and devising creative, practical solutions that make an impact. Outside of my studies, I enjoy playing badminton, reading, and playing any manner competitive games — but I&apos;m also amenable to just relaxing.
+          In particular, I love tackling challenging problems and devising creative, practical solutions that make an impact. Outside of my studies, I enjoy playing badminton, reading, and playing any manner of competitive games — but I&apos;m also amenable to just relaxing.
           <br /><br />
         </div>
-        <Image src="/about.png" alt="A picture of me" width={400} height={300} unoptimized={true} />
+        {/* <Image src="/about.png" alt="A picture of me" width={400} height={300} unoptimized={true} /> */}
       </div>
     </div >
   );

@@ -19,9 +19,12 @@ export default function Home() {
                         {strings.landing_paragraph} <Link href='/projects' className="text-[#d6a3c9]">here!</Link>
                     </p>
                 </span>
-                <p className="w-1/4 text-center order-1 md:order-2">
-                    <Image src="/home.png" alt="A picture of me" width={400} height={300} unoptimized={true} />
-                </p>
+                <div className="w-1/4 text-center order-1 md:order-2">
+                    <div className="relative w-[300px] h-[400px] overflow-hidden rounded-xl border border-gray-400 border-2">
+                        <Image src="\home.jpg" alt="A picture of me" width={400} height={300} unoptimized={true} />
+                        <div className="absolute inset-0 bg-[radial-gradient(transparent_50%,rgba(0,0,0,0.6)_100%)] pointer-events-none" />
+                    </div>
+                </div>
             </div>
         </div>
     );
