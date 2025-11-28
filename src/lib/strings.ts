@@ -18,7 +18,7 @@ export const skills = {
     "languages": ["C", "C++", "Java", "Python", "JavaScript", "TypeScript", "Go"],
     "frameworks": ["Next.js", "React.js", "Node.js", "Electron", "Pandas", "NumPy"],
     "tools": ["AWS", "Azure", "Git", "Github", "Docker"],
-    "databases":["SQL Server", "MySQL", "SQLite", "S3"],
+    "databases": ["SQL Server", "MySQL", "SQLite", "S3"],
 }
 
 export const resume_experience = [
@@ -67,16 +67,29 @@ export const resume_experience = [
 
 export const projects = [
     {
+        id: "classic", name: "Classic",
+        description: "AI-integrated tool for students to efficiently manage their semester schedules. No more digging through Blackboard or Canvas for due dates and course info. Classic uses AI to parse syllabuses and schedules, centralizing all relevant information securely and reliably.",
+        github: "https://github.com/ChujiaGuo/classic",
+        skills:
+            [["Next.js with TypeScript", "Provides a fast, modern framework for building the frontend, UI, and UX."],
+            ["Firebase Authentication", "Handles secure user authentication and authorization."],
+            ["Go (API Gateway)", "Chosen for speed and scalability to manage backend requests efficiently."],
+            ["ChatGPT", "AI-powered inference engine for parsing syllabuses, generating schedules, and understanding course data."],
+            ["PostgreSQL", "Relational database storing students, courses, due dates, and contact info."],
+            ["Docker", "Ensures consistent, containerized environments across development and production."],
+            ["Vercel", "Hosts the frontend with fast global deployment."],
+            ["Google Compute", "Hosts the backend APIs and services reliably and securely."]]
+
+    }, {
         id: "bluebot", name: "BlueBot",
         description: "Planned and developed a highly scalable platform using Node.js, Python, and Java, supported upwards of 100,000 daily active users while maintaining high uptime and reliability.",
         github: "https://github.com/ChujiaGuo/pubhallsbot",
         skills:
-            [["Node.js", "Framework used to build the application."],
-            ["JavaScript", "Primary language of choice for this project"],
-            ["Discord.js", "The main library used to interact with the Discord API"],
-            ["Java", "Used to write the secondary application that ran processes that required concurrency and efficiency"],
-            ["MySQL", "Database used to store and manage user and community data"],
-            ["SQLite", "The original database we used, ended up only storing configurations and settings"]
+            [["Node.js & JavaScript", "Core technologies used to build the main application, enabling efficient, real-time interactions."],
+            ["Discord.js", "Primary library for seamless integration with the Discord API."],
+            ["Java", "Implemented secondary processes requiring concurrency and high-performance computation."],
+            ["MySQL", "Managed user and community data with a robust relational database."],
+            ["SQLite", "Initially used for configurations and settings before migrating to MySQL for scalability."]
             ]
     },
     {
@@ -86,14 +99,6 @@ export const projects = [
         skills:
             [["Next.js", "The framework used to build this site. Absolute overkill, but fun to use"],
             ["TypeScript", "Language of choice for this project"]]
-    },
-
-    {
-        id: "WIP", name: "Works in Progress",
-        description: "Current projects in progress:",
-        skills: [
-            ["Portfolio Manager", "An application developed to monitor my personal portfolio across multiple brokerages, as well as allow backtesting and live trading for custom algorithms. Currently using Electron with Typescript for the application, and Python for the backend."]
-        ]
     }
 ]
 
