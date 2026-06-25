@@ -80,7 +80,7 @@ function SkillsEducation() {
                         <b>B.S. Computer Science <br /> University of Maryland, Baltimore County <br /></b>
                     </p>
                     <p className={`${nunito.className} text-md text-[#d6a3c9] text-center`}>
-                        Expected Graduation: Dec 2026 <br />
+                        Expected Graduation: May 2026 <br />
                     </p>
                 </div>
                 <div>
